@@ -33,7 +33,7 @@ where `ρ` is density, `u` the velocity vector, `p` pressure, `E` total energy, 
 # Results
 
 After training the GCNN on 100 NACA airfoil CFD simulations, sample 300 points from the GCNN to create a Lift/Drag landscape parameterized by maximum camber, m, and position of maximum camber, p. From this sample set of 300 points, we choose the argmax, and use it as a starting position for a gradient descent algorithm to find the true coordinates (p,m) that maximize the Lift/Drag ratio.
-![[gcnn_aerofoil/runs/run_007/optim/flow_analysis/run_summary.png]]
+<img width="2543" height="887" alt="run_summary" src="https://github.com/user-attachments/assets/e0321220-806b-4749-9a8c-5b72e196a05a" />
 
 # Solving with SU2
 
@@ -55,8 +55,12 @@ def run_su2(config_path):
 ```
 
 
-| ![[gcnn_aerofoil/data/sample_0000/flow_field.png\|400]] | ![[gcnn_aerofoil/data/sample_0000/streamlines.png\|400]] |
-| ------------------------------------------------------- | -------------------------------------------------------- |
+<img width="2139" height="1181" alt="flow_field" src="https://github.com/user-attachments/assets/431eb327-deb3-49c6-a00a-3f913bb34241" />
+
+<img width="1783" height="584" alt="loss_curves" src="https://github.com/user-attachments/assets/55fc46b2-e410-4ee1-891b-556125dc2cf5" />
+<img width="1092" height="734" alt="streamlines" src="https://github.com/user-attachments/assets/58f9a969-8256-4b33-add4-f1454ae5aab3" />
+
+
 ### SU2 Solver Configuration
 
 | Parameter | Value | Notes |
@@ -157,6 +161,9 @@ A value of `0.05` means the model predictions are on average 5% off from the SU2
 | Batch size | 16 |
 | Epochs | 500 |
 | Early stopping | patience = 50 |
+
+<img width="1783" height="584" alt="loss_curves" src="https://github.com/user-attachments/assets/b4e15d55-c3e0-4e65-bdbe-4051152c6196" />
+
 # Code
 ## Conda Setup
 
