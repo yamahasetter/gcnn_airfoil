@@ -1,0 +1,17 @@
+name: gcnn_aerofoil
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  - pip
+  - tqdm
+  - matplotlib
+  - pip:
+    - gmsh
+    - torch
+    - torch-geometric
+    - numpy
+    - scipy
+    - meshio
+    - pandas
