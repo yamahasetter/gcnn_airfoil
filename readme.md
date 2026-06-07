@@ -57,7 +57,6 @@ def run_su2(config_path):
 
 <img width="2139" height="1181" alt="flow_field" src="https://github.com/user-attachments/assets/431eb327-deb3-49c6-a00a-3f913bb34241" />
 
-<img width="1783" height="584" alt="loss_curves" src="https://github.com/user-attachments/assets/55fc46b2-e410-4ee1-891b-556125dc2cf5" />
 <img width="1092" height="734" alt="streamlines" src="https://github.com/user-attachments/assets/58f9a969-8256-4b33-add4-f1454ae5aab3" />
 
 
