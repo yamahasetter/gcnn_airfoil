@@ -1,5 +1,5 @@
 In this project I recreate the results of Shukla, Oommen and Peyvan et al
-but with Geodesic Convolutional Neural Networks instead of the DeepONet approach.
+but with Graph Convolutional Neural Networks instead of the DeepONet approach.
 
 # Problem Statement
 
