@@ -90,7 +90,7 @@ Each airfoil is stored as a graph: nodes are surface points, edges connect adjac
 The surrogate is a differentiable approximation to SU2. Given NACA shape parameters, it predicts surface Cp and Cf distributions in milliseconds, from which L/D is integrated. Because the surrogate is a PyTorch graph network, gradients of L/D with respect to (p, m) are available via backpropagation — enabling direct gradient-based shape optimisation.
 ## Model Architecture
 
-A graph convolutional network operating on the 1D boundary curve. Each node is a surface point; edges connect geometrically adjacent nodes (geodesic convolution = message-passing along arc length).
+A graph convolutional network operating on the 1D boundary curve. Each node is a surface point; edges connect geometrically adjacent nodes.
 
 | Component | Detail |
 |---|---|
